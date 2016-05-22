@@ -1,0 +1,2 @@
+# Venta Benckmarks
+This package utilizes [PhpBench](http://phpbench.readthedocs.io/en/latest/introduction.html) to track Venta components performance. This allows to compare framework performance with similar projects to stay on track.
