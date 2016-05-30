@@ -19,7 +19,7 @@
     "repositories": [
         {
             "type": "vcs",
-            "url": "https://github.com/ventacommerce/container.git"
+            "url": "https://github.com/ventaframework/container.git"
         },
         {
             "type": "vcs",
