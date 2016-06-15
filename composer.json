@@ -20,14 +20,10 @@
         {
             "type": "vcs",
             "url": "https://github.com/ventaframework/container.git"
-        },
-        {
-            "type": "vcs",
-            "url": "https://github.com/ventacommerce/contracts.git"
         }
     ],
     "require": {
-        "venta/container": "dev-master",
+        "ventaframework/container": "dev-master",
         "pimple/pimple": "~3.0",
         "php-di/php-di": "^5.2",
         "league/container": "^2.2",
