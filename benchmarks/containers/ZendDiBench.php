@@ -1,6 +1,6 @@
 <?php
 
-use Venta\Benchmark\A;
+use Venta\Benchmark\{A, D};
 use Zend\Di\Di;
 
 class ZendDiBench
@@ -12,5 +12,12 @@ class ZendDiBench
             return new A;
         });
         $a = $container->get(A::class);
+    }
+
+    public function benchResolveDependency()
+    {
+        $container = new Di();
+        $d = $container->newInstance(D::class);
+        assert($d instanceof D);
     }
 }

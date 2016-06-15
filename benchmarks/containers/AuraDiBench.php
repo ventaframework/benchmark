@@ -1,7 +1,7 @@
 <?php
 
 use Aura\Di\ContainerBuilder;
-use Venta\Benchmark\A;
+use Venta\Benchmark\{A, D};
 
 class AuraDiBench
 {
@@ -13,5 +13,13 @@ class AuraDiBench
             return new A;
         });
         $a = $container->get('a');
+    }
+
+    public function benchResolveDependency()
+    {
+        $builder = new ContainerBuilder();
+        $di = $builder->newInstance($builder::AUTO_RESOLVE);
+        $d = $di->newInstance(D::class);
+        assert($d instanceof D);
     }
 }

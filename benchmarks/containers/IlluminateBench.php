@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Container\Container;
-use Venta\Benchmark\A;
+use Venta\Benchmark\{A, D};
 
 class IlluminateBench
 {
@@ -13,4 +13,12 @@ class IlluminateBench
         });
         $a = $container->make('a');
     }
+
+    public function benchResolveDependency()
+    {
+        $container = new Container;
+        $d = $container->make(D::class);
+        assert($d instanceof D);
+    }
+
 }
