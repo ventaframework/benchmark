@@ -30,6 +30,7 @@
         "illuminate/container": "^5.2",
         "zendframework/zend-di": "^2.6",
         "level-2/Dice": "^2.0",
-        "aura/di": "^3.1"
+        "aura/di": "^3.1",
+        "rdlowrey/auryn": "^1.4"
     }
 }
