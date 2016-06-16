@@ -12,4 +12,12 @@ class E
         $this->d = $d;
     }
 
+    /**
+     * @return D
+     */
+    public function getD()
+    {
+        return $this->d;
+    }
+
 }

@@ -5,11 +5,19 @@ namespace Venta\Benchmark;
 
 class H
 {
-    protected $g;
+    protected $s;
 
-    public function __construct(G $g)
+    public function __construct(S $s)
     {
-        $this->g = $g;
+        $this->s = $s;
+    }
+
+    /**
+     * @return S
+     */
+    public function getS()
+    {
+        return $this->s;
     }
 
 }

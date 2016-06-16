@@ -12,4 +12,12 @@ class C
         $this->b = $b;
     }
 
+    /**
+     * @return B
+     */
+    public function getB()
+    {
+        return $this->b;
+    }
+
 }
