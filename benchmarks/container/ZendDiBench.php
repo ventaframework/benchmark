@@ -1,4 +1,5 @@
 <?php
+namespace Venta\Benchmark\Container;
 
 use Venta\Benchmark\{A, D};
 use Zend\Di\Di;
@@ -11,7 +12,7 @@ class ZendDiBench
         $container->instanceManager()->addTypePreference(A::class, function () {
             return new A;
         });
-        $a = $container->get(A::class);
+        $container->get(A::class);
     }
 
     public function benchResolveDependency()

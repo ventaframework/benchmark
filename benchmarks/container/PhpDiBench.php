@@ -1,4 +1,5 @@
 <?php
+namespace Venta\Benchmark\Container;
 
 use DI\ContainerBuilder;
 use Venta\Benchmark\{A, D};
@@ -13,7 +14,7 @@ class PhpDiBench
                 return new A;
             },
         ]);
-        $a = $builder->build()->get('a');
+        $builder->build()->get('a');
     }
 
     public function benchResolveDependency()

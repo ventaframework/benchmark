@@ -1,4 +1,5 @@
 <?php
+namespace Venta\Benchmark\Container;
 
 use Dice\Dice;
 use Venta\Benchmark\{A, D};
@@ -18,7 +19,7 @@ class DiceBench
             ],
         ];
         $container->addRule(A::class, $rule);
-        $a = $container->create(A::class);
+        $container->create(A::class);
     }
 
     public function benchResolveDependency()

@@ -23,7 +23,7 @@
         }
     ],
     "require": {
-        "ventaframework/container": "dev-master",
+        "abava/container": "dev-master",
         "pimple/pimple": "~3.0",
         "php-di/php-di": "^5.2",
         "league/container": "^2.2",
@@ -31,6 +31,10 @@
         "zendframework/zend-di": "^2.6",
         "level-2/Dice": "^2.0",
         "aura/di": "^3.1",
-        "rdlowrey/auryn": "^1.4"
+        "rdlowrey/auryn": "^1.4",
+        "league/event": "^2.1",
+        "illuminate/events": "^5.2",
+        "symfony/event-dispatcher": "^3.1",
+        "evenement/evenement": "^2.0"
     }
 }

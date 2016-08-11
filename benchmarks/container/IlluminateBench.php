@@ -1,9 +1,10 @@
 <?php
+namespace Venta\Benchmark\Container;
 
+use Illuminate\Container\Container;
 use Venta\Benchmark\{A, B, C, D, E, F, G, H, I, J, K, S, InterfaceF};
-use Venta\Container\Container;
 
-class VentaBench
+class IlluminateBench
 {
     public function benchCreateSingleObject()
     {
@@ -16,7 +17,7 @@ class VentaBench
 
     public function benchResolveDependency()
     {
-        $container = new Container();
+        $container = new Container;
         $d = $container->make(D::class);
         assert($d instanceof D);
     }

@@ -1,4 +1,5 @@
 <?php
+namespace Venta\Benchmark\Container;
 
 use Aura\Di\ContainerBuilder;
 use Venta\Benchmark\{A, D};
@@ -12,7 +13,7 @@ class AuraDiBench
         $container->set('a', function () {
             return new A;
         });
-        $a = $container->get('a');
+        $container->get('a');
     }
 
     public function benchResolveDependency()

@@ -1,6 +1,8 @@
 <?php
+namespace Venta\Benchmark\Container;
 
 use League\Container\Container;
+use League\Container\ReflectionContainer;
 use Venta\Benchmark\{A, D};
 
 class LeagueBench
@@ -11,14 +13,14 @@ class LeagueBench
         $container->add('a', function () {
             return new A;
         });
-        $a = $container->get('a');
+        $container->get('a');
     }
 
     public function benchResolveDependency()
     {
         $container = new Container;
         $container->delegate(
-            new League\Container\ReflectionContainer
+            new ReflectionContainer
         );
         $d = $container->get(D::class);
         assert($d instanceof D);
