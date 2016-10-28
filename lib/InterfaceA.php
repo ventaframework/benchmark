@@ -1,8 +1,10 @@
 <?php
 
+
 namespace Venta\Benchmark;
 
 
-class A implements InterfaceA
+interface InterfaceA
 {
+
 }

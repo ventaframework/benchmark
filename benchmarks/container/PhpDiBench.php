@@ -19,7 +19,7 @@ class PhpDiBench
 
     public function benchResolveDependency()
     {
-        $builder = new DI\ContainerBuilder();
+        $builder = new ContainerBuilder;
         $container = $builder->build();
         $d = $container->get(D::class);
         assert($d instanceof D);

@@ -16,14 +16,8 @@
     "require-dev": {
         "phpbench/phpbench": "@dev"
     },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/ventaframework/container.git"
-        }
-    ],
     "require": {
-        "abava/container": "dev-master",
+        "venta/container": "dev-master",
         "pimple/pimple": "~3.0",
         "php-di/php-di": "^5.2",
         "league/container": "^2.2",
